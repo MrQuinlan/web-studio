@@ -1,6 +1,5 @@
 
 # Web Studio
-
 This project is a responsive website developed as part of a web development training program.
 
 ## Project Structure
