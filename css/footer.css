@@ -1,0 +1,33 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.footer .logo {
+  padding: 0;
+
+  color: var(--white-color);
+}
+
+.address-text {
+  margin-top: 28px;
+
+  color: var(--white-color);
+}
+
+.address-text,
+.address-link {
+  line-height: 1.14;
+}
+
+.address-link {
+  display: block;
+  margin-top: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover {
+  color: var(--white-color);
+}
