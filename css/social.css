@@ -1,0 +1,36 @@
+.social-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: block;
+
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  margin-top: 20px;
+}
+
+.footer-social-link-color {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,67 @@
+/* Filter */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-font-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  cursor: pointer;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px 0px #0000001a;
+}
+
+/* Portfolio */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--primary-gap);
+  margin-top: 50px;
+}
+
+.product-card {
+  background-color: var(--white-color);
+}
+
+.card-descr-group {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-font-color);
+}
+
+.card-descr {
+  padding-top: 4px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+}

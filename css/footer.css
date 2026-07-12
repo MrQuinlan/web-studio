@@ -1,0 +1,47 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.footer .logo {
+  padding: 0;
+
+  color: var(--white-color);
+}
+
+.address {
+  margin-top: 28px;
+}
+
+.address-link {
+  line-height: 1.14;
+}
+
+.address-link {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--white-color);
+}
+
+.footer-flex {
+  display: flex;
+  gap: 70px;
+
+  align-items: baseline;
+}
+
+.join-us-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white-color);
+}
