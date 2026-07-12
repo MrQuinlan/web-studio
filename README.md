@@ -17,3 +17,4 @@ This is a practice project for a modern "WebStudio" landing page. The website in
 * Typography integration using Google Fonts (Roboto and Raleway).
 * Consistent styling with `modern-normalize`.
 * Social media integration and interactive client logos.
+* **Interactive modal window and project hover effects for improved UX.**
