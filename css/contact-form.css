@@ -1,0 +1,139 @@
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form__group {
+  position: relative;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: var(--primary-font-color);
+}
+
+.contact-form__text-area {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form__group--margin-top {
+  margin-top: 28px;
+}
+
+.contact-form__icon,
+.contact-form__label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+}
+
+.contact-form__icon {
+  fill: var(--primary-font-color);
+}
+
+.contact-form__input:focus-visible {
+  outline: 1px solid var(--accent-color);
+}
+
+.contact-form__input:focus-visible + .contact-form__icon {
+  fill: var(--accent-color);
+}
+
+.contact-form__input:focus-visible ~ .contact-form__label,
+.contact-form__input:not(:placeholder-shown) ~ .contact-form__label {
+  transform: translate3d(-30px, -40px, 0);
+}
+
+.contact-form__label {
+  left: 42px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-font-color);
+
+  transition: transform var(--duration) var(--timing-fn);
+}
+
+.contact-form__text-area-icon,
+.contact-form__text-area-label {
+  transform: translateY(0);
+}
+
+.contact-form__text-area-icon {
+  top: 11px;
+}
+
+.contact-form__text-area-label {
+  top: 13px;
+}
+
+.contact-form__input:focus-visible ~ .contact-form__text-area-label,
+.contact-form__input:not(:placeholder-shown) ~ .contact-form__text-area-label {
+  transform: translate3d(-30px, -32px, 0);
+}
+
+.license {
+  position: relative;
+}
+
+.license__icon {
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--duration) var(--timing-fn);
+}
+
+.license__icon,
+.license__check {
+  position: absolute;
+
+  top: 50%;
+  left: 13px;
+
+  transform: translateY(-50%);
+}
+
+.license__check {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary-font-color);
+  border-radius: 2px;
+
+  opacity: 1;
+  transition: opacity var(--duration) var(--timing-fn);
+}
+
+.license__check:checked {
+  opacity: 0;
+}
+
+.license__check:checked + .license__icon {
+  opacity: 1;
+}
+
+.license .license__link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.license__label {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-form__btn {
+  margin-top: 30px;
+}

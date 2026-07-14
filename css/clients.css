@@ -1,0 +1,40 @@
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+
+  text-align: center;
+
+  color: var(--primary-font-color);
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 27px;
+}
+
+.client-link {
+  display: block;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  color: var(--secondary-color);
+
+  transition:
+    border-color var(--duration) var(--timing-fn),
+    color var(--duration) var(--timing-fn);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
