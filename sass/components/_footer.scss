@@ -1,0 +1,16 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.footer__social--list {
+  margin-top: 20px;
+}
+
+.footer--layout {
+  @extend %centered-items;
+
+  justify-content: space-between;
+  align-items: baseline;
+}

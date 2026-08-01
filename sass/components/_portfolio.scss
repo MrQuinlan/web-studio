@@ -1,0 +1,7 @@
+.portfolio-list {
+  @extend %list;
+  @extend %centered-items;
+
+  gap: $primary-gap;
+  margin-top: 50px;
+}

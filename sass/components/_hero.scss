@@ -1,0 +1,33 @@
+.hero {
+  text-align: center;
+}
+
+.hero__section {
+  padding: 200px 0;
+}
+
+.hero__bcg-img {
+  max-width: 1600px;
+  max-height: 600px;
+  margin: 0 auto;
+  background-image:
+    linear-gradient(to right, $hero-overlay-color, $hero-overlay-color),
+    url('../../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: #2f303a;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+
+  text-transform: uppercase;
+}

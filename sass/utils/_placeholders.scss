@@ -1,0 +1,21 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%centered-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+%title {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+}

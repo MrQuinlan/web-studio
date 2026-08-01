@@ -1,0 +1,33 @@
+.our-field__title {
+  @extend %title;
+}
+
+.our-field__list {
+  @extend %list;
+  @extend %centered-items;
+
+  gap: $primary-gap;
+}
+
+.our-field__section {
+  padding-top: 0;
+}
+
+.our-field__item {
+  position: relative;
+}
+
+.our-field__descr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  text-align: center;
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

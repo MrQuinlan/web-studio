@@ -1,0 +1,52 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 91px;
+
+  max-width: 1200px;
+}
+
+.main-nav__list {
+  @extend %list;
+  @extend %centered-items;
+
+  gap: 50px;
+}
+
+.main-nav__list,
+.contacts__link {
+  font-weight: 500;
+}
+
+.main-nav__link {
+  position: relative;
+  display: inline-block;
+  padding: 32px 0;
+
+  letter-spacing: 0.02em;
+  color: $primary-font-color;
+
+  transition: color $duration $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.main-nav__link--current-page {
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+  }
+}

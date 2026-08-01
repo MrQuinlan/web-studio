@@ -1,0 +1,21 @@
+.address {
+  margin-top: 28px;
+}
+
+.address-link {
+  display: block;
+
+  line-height: 1.14;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: $duration $timing-fn;
+
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}

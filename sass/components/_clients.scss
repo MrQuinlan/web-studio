@@ -1,0 +1,38 @@
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+
+  text-align: center;
+
+  color: $primary-font-color;
+}
+
+.clients-list {
+  @extend %list;
+  @extend %centered-items;
+  margin-top: 50px;
+  gap: 27px;
+}
+
+.client-list__link {
+  display: block;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  color: $secondary-color;
+
+  transition:
+    border-color $duration $timing-fn,
+    color $duration $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client-list__icon {
+  fill: currentColor;
+}

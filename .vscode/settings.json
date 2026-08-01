@@ -1,0 +1,23 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "generateMap": true
+    },
+
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css",
+      "generateMap": true
+    }
+  ],
+
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**",
+    "/.git/**"
+  ]
+}

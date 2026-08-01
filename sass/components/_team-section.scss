@@ -1,0 +1,7 @@
+.team-section {
+  background-color: $secondary-bg-color;
+}
+
+.team-section__title {
+  @extend %title;
+}

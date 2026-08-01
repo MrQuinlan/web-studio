@@ -1,0 +1,16 @@
+body {
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+
+  color: $primary-font-color;
+  background-color: $primary-bg-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

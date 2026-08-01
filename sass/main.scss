@@ -1,0 +1,43 @@
+// Common
+
+@import './utils/vars';
+
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+@import './components/container';
+@import './components/section';
+@import './components/header';
+@import './components/logo';
+@import './components/main-nav';
+@import './components/button';
+@import './components/footer';
+@import './components/address';
+@import './components/join-us';
+@import './components/subscribe-form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/contact-form';
+
+// Main page styles
+
+@import './components/hero';
+@import './components/features';
+@import './components/our-field';
+@import './components/team-section';
+@import './components/team-list';
+@import './components/team-card';
+@import './components/social-list';
+@import './components/clients';
+
+// Portfolio page styles
+
+@import './components/filter';
+@import './components/portfolio';
+@import './components/product-card';
+
+@import './utils/is-hidden';

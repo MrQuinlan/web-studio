@@ -1,0 +1,139 @@
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form__group {
+  position: relative;
+
+  &--margin-top {
+    margin-top: 28px;
+  }
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: $primary-font-color;
+
+  &:focus-visible {
+    outline: 1px solid $accent-color;
+  }
+}
+
+.contact-form__text-area {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  fill: $primary-font-color;
+
+  .contact-form__input:focus-visible + & {
+    fill: $accent-color;
+  }
+}
+
+.contact-form__label {
+  @extend .contact-form__icon;
+
+  left: 42px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+
+  color: $secondary-font-color;
+
+  transition: transform $duration $timing-fn;
+
+  transform: translateY(-50%);
+
+  .contact-form__input:focus-visible ~ &,
+  .contact-form__input:not(:placeholder-shown) ~ & {
+    transform: translate3d(-30px, -40px, 0);
+  }
+}
+
+.contact-form__text-area-icon {
+  top: 11px;
+
+  transform: translateY(0);
+}
+
+.contact-form__text-area-label {
+  @extend .contact-form__text-area-icon;
+
+  top: 13px;
+
+  .contact-form__input:focus-visible ~ &,
+  .contact-form__input:not(:placeholder-shown) ~ & {
+    transform: translate3d(-30px, -32px, 0);
+  }
+}
+
+.license {
+  position: relative;
+}
+
+.license__icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity $duration $timing-fn;
+
+  .license__check:checked + & {
+    opacity: 1;
+  }
+}
+
+.license__check {
+  @extend .license__icon;
+
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $primary-font-color;
+  border-radius: 2px;
+
+  opacity: 1;
+  transition: opacity $duration $timing-fn;
+
+  &:checked {
+    opacity: 0;
+  }
+}
+
+.license__link {
+  color: $accent-color;
+
+  .license & {
+    text-decoration: underline;
+  }
+}
+
+.license__label {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-form__btn {
+  margin-top: 30px;
+}

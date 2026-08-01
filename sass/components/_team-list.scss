@@ -1,0 +1,6 @@
+.team-list {
+  @extend %list;
+  @extend %centered-items;
+
+  gap: $primary-gap;
+}
